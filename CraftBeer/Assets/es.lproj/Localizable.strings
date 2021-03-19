@@ -1,0 +1,31 @@
+/*
+  Localizable.strings
+  CraftBeer
+
+  Created by Michele Restuccia on 8/3/21.
+  
+*/
+
+//Common
+"error-fetch" = "Error obteniendo los datos";
+"search-placeholder-searchbar" = "Buscar...";
+
+//Tabbar
+"tabbar-beer-list" = "Inicio";
+"tabbar-settings" = "Configuración";
+
+//BeerList
+"home-feature-title-1" = "Cañas";
+"home-feature-title-2" = "Cervezas en botella";
+"home-block-title" = "Cervezas alcoholicas";
+"home-inline-title" = "Cervezas tosdadas";
+
+//BeerDetail
+"beer-add-cart" = "Añadir";
+"notify-when-available" = "Avísame cuando llegue";
+"beer-details-alcohol-title" = "ABV: %@";
+"beer-details-bitter-title" = "IBU: %@";
+"beer-details-color-title" = "SRM: %@";
+
+//Settings
+"settings-title" = "Settings";

@@ -1,0 +1,4 @@
+curl \
+	--header "Content-Type: application/x-www-form-urlencoded" \
+	--header "User-Agent: iOS 14.4.0 - xctest  (17501)" \
+	"https://api.punkapi.com/v2/beers?currentPage=1&pageSize=20"

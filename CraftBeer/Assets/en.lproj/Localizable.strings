@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  CraftBeer
+
+  Created by Michele Restuccia on 8/3/21.
+  
+*/
+
+//Common
+"error-fetch" = "Error obtaining data";
+"search-placeholder-searchbar" = "Search...";
+
+//Tabbar
+"tabbar-beer-list" = "Home";
+"tabbar-settings" = "Settings";
+
+//BeerList
+"home-feature-title-1" = "Tap Beers";
+"home-feature-title-2" = "Bottle Beers";
+"home-block-title" = "Very alcoholic Beers";
+"home-inline-title" = "Dark beers";
+
+//BeerDetail
+"beer-add-cart" = "Add";
+"notify-when-available" = "Let me know when it arrives";
+"beer-details-alcohol-title" = "ABV: %@";
+"beer-details-bitter-title" = "IBU: %@";
+"beer-details-color-title" = "SRM: %@";
+
+//Settings
+"settings-title" = "Settings";
