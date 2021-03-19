@@ -23,11 +23,16 @@ extension UIViewController {
 private extension AppModule where Self: UIViewController {
     func notificationButton() -> UIBarButtonItem {
         let image = UIImage.craftBeerIcon(.alarm).scaleTo(.init(width: 20, height: 20))
-        return UIBarButtonItem(
+        let button = UIBarButtonItem(
             image: image.withTintColor(.orange, renderingMode: .alwaysOriginal),
             style: .plain,
             target: self,
             action: #selector(onNotificationButtonTapped)
         )
+        
+        /// Setup accesibility
+        button.setCraftBeerIdentifier(.notification)
+        
+        return button
     }
 }

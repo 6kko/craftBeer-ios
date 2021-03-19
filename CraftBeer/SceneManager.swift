@@ -4,6 +4,7 @@
 
 import UIKit
 import EssentialKit
+import CraftBeerAccessibility
 import IQKeyboardManagerSwift
 
 class SceneManager {
@@ -15,10 +16,16 @@ class SceneManager {
     
     init(window: UIWindow) {
         self.window = window
+        #if DEVELOP
+        if CommandLine.arguments.contains("--uitesting") {
+            UIView.setAnimationsEnabled(false)
+            window.layer.speed = 100
+        }
+        #endif
     }
     
     func updateRootViewController() {
-        let newViewController = NaturitasTabBarController()
+        let newViewController = CraftBeerTabBarController()
         if let rootViewController = self.rootViewController {
             rootViewController.updateContainedViewController(newViewController)
         } else {
@@ -81,7 +88,7 @@ class SceneManager {
     }
 }
 
-class NaturitasTabBarController: UITabBarController, UITabBarControllerDelegate {
+class CraftBeerTabBarController: UITabBarController, UITabBarControllerDelegate {
     
     enum Tags: Int {
         case beerList, settings
@@ -113,6 +120,9 @@ class NaturitasTabBarController: UITabBarController, UITabBarControllerDelegate 
             navigationController(with: homeVC),
             navigationController(with: settingsVC),
         ]
+        
+        /// Setup accesibility
+        settingsVC.1.setCraftBeerIdentifier(.settings)
     }
     
     required init?(coder: NSCoder) {

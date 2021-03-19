@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "92BF3752-79DF-45FE-B62C-24DC4D242FD4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+      {
+        "target" : {
+          "containerPath" : "container:CraftBeer.xcodeproj",
+          "identifier" : "D1CC80132552C89200CBB444",
+          "name" : "CraftBeerUITests"
+        }
+      }
+  ],
+  "version" : 1
+}

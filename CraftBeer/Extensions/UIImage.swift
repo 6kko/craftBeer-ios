@@ -10,6 +10,7 @@ extension UIImage {
         case alarm
         case cart
         case home
+        case like
         case settings
         case user
     }
@@ -22,6 +23,8 @@ extension UIImage {
             return UIImage(named: "cart-icon")!.withRenderingMode(.alwaysOriginal)
         case .home:
             return UIImage(named: "home-icon")!.withRenderingMode(.alwaysOriginal)
+        case .like:
+            return UIImage(named: "like-icon")!.withRenderingMode(.alwaysOriginal)
         case .settings:
             return UIImage(named: "settings-icon")!.withRenderingMode(.alwaysOriginal)
         case .user:

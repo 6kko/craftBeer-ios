@@ -1,0 +1,50 @@
+{
+  "configurations" : [
+    {
+      "id" : "9CD2FC25-1B14-4296-9905-DDCBC0EB8041",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:CraftBeerKit",
+          "identifier" : "CraftBeerKit",
+          "name" : "CraftBeerKit"
+        },
+        {
+          "containerPath" : "container:CraftBeer.xcodeproj",
+          "identifier" : "F5959E542301935000D225AD",
+          "name" : "CraftBeer"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CraftBeer.xcodeproj",
+      "identifier" : "F5959E542301935000D225AD",
+      "name" : "CraftBeer"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CraftBeer.xcodeproj",
+        "identifier" : "7F3968AB25F292B700A739D2",
+        "name" : "CraftBeerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:CraftBeerKit",
+        "identifier" : "CraftBeerKitTests",
+        "name" : "CraftBeerKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

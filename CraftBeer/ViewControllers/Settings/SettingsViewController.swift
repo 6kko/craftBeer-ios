@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import CraftBeerAccessibility
 
 class SettingsViewController: UIViewController {
     
@@ -29,6 +30,9 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 48
+        
+        /// Setup accesibility
+        setCraftBeerIdentifier(.settings)
     }
     
     override func viewDidLoad() {
@@ -82,9 +86,12 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         let action = UIContextualAction(style: .normal, title: nil) { _,_,_ in
             self.showTodoAlert()
         }
-        let image = UIImage.craftBeerIcon(.alarm).scaleTo(CGSize(width: 20, height: 20))
+        let image = UIImage.craftBeerIcon(.like).scaleTo(CGSize(width: 20, height: 20))
         action.image = image
         action.backgroundColor = .orange
+        
+        /// Setup accesibility
+        action.setCraftBeerIdentifier(Identifiers.Buttons.like)
         return UISwipeActionsConfiguration(actions: [action])
     }
     

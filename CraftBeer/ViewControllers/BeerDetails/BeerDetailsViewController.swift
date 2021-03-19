@@ -4,6 +4,7 @@
 
 import UIKit
 import EssentialKit
+import CraftBeerAccessibility
 
 class BeerDetailsViewController: UIViewController, PhotoGalleryViewControllerDelegate {
     
@@ -53,6 +54,9 @@ class BeerDetailsViewController: UIViewController, PhotoGalleryViewControllerDel
                 bottomViewController: actionVC
             )
         )
+        
+        /// Setup accesibility
+        setCraftBeerIdentifier(.beerDetails)
     }
     
     override func viewDidLoad() {

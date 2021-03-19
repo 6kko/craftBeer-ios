@@ -4,6 +4,7 @@
 
 import UIKit
 import EssentialKit
+import CraftBeerAccessibility
 
 class BeerListViewController: UIViewController {
     
@@ -37,6 +38,9 @@ class BeerListViewController: UIViewController {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.delegate = self
+        
+        /// Setup accesibility
+        setCraftBeerIdentifier(.beerList)
     }
     
     override func viewDidLoad() {

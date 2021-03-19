@@ -8,3 +8,6 @@ ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 
 // Code Signing
 PRODUCT_BUNDLE_IDENTIFIER = com.michelerestuccia.craftBeer.ios
+
+// Compiling
+MR_SWIFT_FLAGS = APPSTORE
